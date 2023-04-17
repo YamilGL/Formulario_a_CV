@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario CV</title>
+	<style>
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		label {
+			margin-bottom: 5px;
+		}
+
+		input[type="submit"] {
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+    <form action="">
+	<div class="container">
+		<label for="nombre">Nombre y Apellidos:</label>
+		<input type="text" id="nombre" name="nombre"><br>
+
+		<label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+		<input type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br>
+
+		<label for="ocupacion">Ocupación:</label>
+		<input type="text" id="ocupacion" name="ocupacion"><br>
+
+		<label for="contacto">Contacto (telefono, email):</label>
+		<input type="text" id="contacto" name="contacto"><br>
+
+		<label for="nacionalidad">Nacionalidad:</label>
+		<select id="nacionalidad" name="nacionalidad">
+			<option value="argentina">Argentina</option>
+			<option value="brasil">Brasil</option>
+			<option value="chile">Chile</option>
+			<option value="colombia">Colombia</option>
+			<option value="mexico">Mexico</option>
+            <option value="mexico">Peru</option>
+		</select><br>
+
+		<label for="nivel-ingles">Nivel de inglés:</label>
+<div id="nivel-ingles">
+  <input type="radio" id="basico" name="ingles" value="basico">
+  <label for="basico">Básico</label>
+  <input type="radio" id="intermedio" name="ingles" value="intermedio">
+  <label for="intermedio">Intermedio</label>
+  <input type="radio" id="avanzado" name="ingles" value="avanzado">
+  <label for="avanzado">Avanzado</label>
+  <input type="radio" id="fluido" name="ingles" value="fluido">
+  <label for="fluido">Fluido</label>
+</div>
+</br>
+
+		<label for="lenguajes_programacion">Lenguajes de programación:</label>
+		<select id="lenguajes_programacion" name="lenguajes_programacion" multiple>
+			<option value="html">HTML</option>
+			<option value="css">CSS</option>
+			<option value="javascript">JavaScript</option>
+			<option value="python">Python</option>
+			<option value="php">PHP</option>
+		</select><br>
+
+		<label for="aptitudes">Aptitudes:</label>
+		<input type="text" id="aptitudes" name="aptitudes" list="aptitudes_list">
+		<datalist id="aptitudes_list">
+			<option value="Creatividad">
+			<option value="Trabajo en equipo">
+			<option value="Comunicación">
+			<option value="Resolución de problemas">
+			<option value="Pensamiento crítico">
+		</datalist><br>
+
+		<label for="habilidades">Habilidades:</label>
+    <div>
+<input type="checkbox" id="habilidad1" name="habilidad1" value="Habilidad 1">
+<label for="habilidad1">Habilidad 1</label>
+<input type="checkbox" id="habilidad2" name="habilidad2" value="Habilidad 2">
+<label for="habilidad2">Habilidad 2</label>
+<input type="checkbox" id="habilidad3" name="habilidad3" value="Habilidad 3">
+<label for="habilidad3">Habilidad 3</label>
+</div>
+</br>
+<label for="perfil">Perfil:</label>
+<textarea id="perfil" name="perfil" rows="4" cols="50"></textarea>
+
+<button type="submit">Enviar</button>
+</div>
+</form>
+</body>
+</html>
